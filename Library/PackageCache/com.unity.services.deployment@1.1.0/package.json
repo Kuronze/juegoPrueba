@@ -1,0 +1,30 @@
+{
+  "name": "com.unity.services.deployment",
+  "displayName": "Deployment",
+  "version": "1.1.0",
+  "unity": "2021.3",
+  "description": "The Deployment package allows for a cohesive interface for the deployment of assets and configurations for UGS services.\n\nIt is not used on its own as UGS services will integrate with it.\nIt provides the base tooling, such as the Deployment Window, so that UGS services have shared functionality surrounding the deployment of the service's configuration files.",
+  "dependencies": {
+    "com.unity.services.deployment.api": "1.0.0",
+    "com.unity.services.core": "1.10.1"
+  },
+  "_upm": {
+    "gameService": {
+      "groupId": "devops",
+      "configurePath": "Project/Services/Deployment"
+    },
+    "changelog": "### Added\n- Deployment now uses the main Environment Selector in Project Settings > Services > Environment, which can also be used to define the target runtime environment.\n- Added inspector support for deployment definition exclude paths.\n- Added support for deployment definition exclude paths in the Deployment window."
+  },
+  "relatedPackages": {
+    "com.unity.services.deployment.tests": "1.1.0"
+  },
+  "upmCi": {
+    "footprint": "dc2e6cf82a290b60a610ed357b404d02f9e92d60"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.deployment@1.1/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+    "type": "git",
+    "revision": "3b1be2f9224eedf16c2a0b31c469d7981fd687ea"
+  }
+}
